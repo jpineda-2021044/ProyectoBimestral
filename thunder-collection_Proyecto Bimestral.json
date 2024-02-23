@@ -1,0 +1,245 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Proyecto Bimestral",
+    "dateExported": "2024-02-23T23:20:33.653Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "b16fc39a-0fdd-43d7-96f6-65bb2736a50c",
+            "name": "PublicRoutes",
+            "containerId": "",
+            "created": "2024-02-23T19:51:59.326Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "f194a365-3729-47e4-848e-a75d9c11c83b",
+            "name": "ClientRoutes",
+            "containerId": "",
+            "created": "2024-02-23T19:52:28.100Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "06ef58ec-a6ea-4b65-9fb7-eb0eba531ee8",
+            "name": "AdminRoutes",
+            "containerId": "",
+            "created": "2024-02-23T19:52:40.301Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "cc2bbc1d-aecb-4419-bb41-89c12f10ff68",
+            "colId": "3445b6b8-d5e3-491e-ac18-add223192809",
+            "containerId": "b16fc39a-0fdd-43d7-96f6-65bb2736a50c",
+            "name": "register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-23T19:53:09.664Z",
+            "modified": "2024-02-23T21:40:40.273Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "pepe"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Pineda"
+                    },
+                    {
+                        "name": "email",
+                        "value": "jjpineda@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "pepepe"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "address",
+                        "value": "zona 4"
+                    },
+                    {
+                        "name": "role",
+                        "value": "ADMIN"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2b30bec5-03b9-427b-926b-07b6e1228eeb",
+            "colId": "3445b6b8-d5e3-491e-ac18-add223192809",
+            "containerId": "b16fc39a-0fdd-43d7-96f6-65bb2736a50c",
+            "name": "login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-23T20:11:19.085Z",
+            "modified": "2024-02-23T23:06:31.379Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "pepito"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "acf443ff-f2a2-478c-930d-dda31c426331",
+            "colId": "3445b6b8-d5e3-491e-ac18-add223192809",
+            "containerId": "f194a365-3729-47e4-848e-a75d9c11c83b",
+            "name": "updateUser",
+            "url": "/user/update/65d910d8854fea168a93441e",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-23T20:14:40.469Z",
+            "modified": "2024-02-23T21:42:21.641Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ5MTBkODg1NGZlYTE2OGE5MzQ0MWUiLCJ1c2VybmFtZSI6InBlcGVwZSIsIm5hbWUiOiJwZXBlIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA4NzI0NDcwLCJleHAiOjE3MDg3MjgwNzB9.44cdnhCaURuQWWIh0eTbeWu8X0409epVhVWTlsMr0n8"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "jsjsjs"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "cd5e2944-382d-4fa9-8059-c19fdfa40763",
+            "colId": "3445b6b8-d5e3-491e-ac18-add223192809",
+            "containerId": "f194a365-3729-47e4-848e-a75d9c11c83b",
+            "name": "deleteUser",
+            "url": "/user/delete/65d8f966250c5729a9b1b9dd",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-23T20:21:11.447Z",
+            "modified": "2024-02-23T20:22:03.651Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ4Zjk2NjI1MGM1NzI5YTliMWI5ZGQiLCJ1c2VybmFtZSI6ImpwaW5lZGEiLCJuYW1lIjoiSnVhbiIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3MDg3MTk1NTIsImV4cCI6MTcwODcyMzE1Mn0.GVot0GDTUS2ZznDbQ0zy-a032iFbF6KlmEM3LFl82I4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "092cbcb9-9e12-4895-b918-78d209be5a4d",
+            "colId": "3445b6b8-d5e3-491e-ac18-add223192809",
+            "containerId": "06ef58ec-a6ea-4b65-9fb7-eb0eba531ee8",
+            "name": "addCategory",
+            "url": "/category/save",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-02-23T20:22:33.888Z",
+            "modified": "2024-02-23T21:54:20.297Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ5MTBkODg1NGZlYTE2OGE5MzQ0MWUiLCJ1c2VybmFtZSI6InBlcGVwZSIsIm5hbWUiOiJwZXBlIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA4NzI0NDcwLCJleHAiOjE3MDg3MjgwNzB9.44cdnhCaURuQWWIh0eTbeWu8X0409epVhVWTlsMr0n8eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ5MTBkODg1NGZlYTE2OGE5MzQ0MWUiLCJ1c2VybmFtZSI6InBlcGVwZSIsIm5hbWUiOiJwZXBlIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA4NzI0NDcwLCJleHAiOjE3MDg3MjgwNzB9.44cdnhCaURuQWWIh0eTbeWu8X0409epVhVWTlsMr0n8eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ5MTBkODg1NGZlYTE2OGE5MzQ0MWUiLCJ1c2VybmFtZSI6InBlcGVwZSIsIm5hbWUiOiJwZXBlIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA4NzI0NDcwLCJleHAiOjE3MDg3MjgwNzB9.44cdnhCaURuQWWIh0eTbeWu8X0409epVhVWTlsMr0n8eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ5MTBkODg1NGZlYTE2OGE5MzQ0MWUiLCJ1c2VybmFtZSI6InBlcGVwZSIsIm5hbWUiOiJwZXBlIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA4NzI0NDcwLCJleHAiOjE3MDg3MjgwNzB9.44cdnhCaURuQWWIh0eTbeWu8X0409epVhVWTlsMr0n8eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ5MTBkODg1NGZlYTE2OGE5MzQ0MWUiLCJ1c2VybmFtZSI6InBlcGVwZSIsIm5hbWUiOiJwZXBlIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA4NzI0NDcwLCJleHAiOjE3MDg3MjgwNzB9.44cdnhCaURuQWWIh0eTbeWu8X0409epVhVWTlsMr0n8.eyJ1aWQiOiI2NWQ5MTBkODg1NGZlYTE2OGE5MzQ0MWUiLCJ1c2VybmFtZSI6InBlcGVwZSIsIm5hbWUiOiJwZXBlIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA4NzI0NDcwLCJleHAiOjE3MDg3MjgwNzB9.44cdnhCaURuQWWIh0eTbeWu8X0409epVhVWTlsMr0n8.eyJ1aWQiOiI2NWQ4Zjk2NjI1MGM1NzI5YTliMWI5ZGQiLCJ1c2VybmFtZSI6ImpwaW5lZGEiLCJuYW1lIjoiSnVhbiIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3MDg3MTk1NTIsImV4cCI6MTcwODcyMzE1Mn0.GVot0GDTUS2ZznDbQ0zy-a032iFbF6KlmEM3LFl82I4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Ingles"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Se estudia el idioma ingles"
+                    },
+                    {
+                        "name": "categoria",
+                        "value": "",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f3b56f9c-edf3-41eb-945f-b125ead3c556",
+            "colId": "3445b6b8-d5e3-491e-ac18-add223192809",
+            "containerId": "06ef58ec-a6ea-4b65-9fb7-eb0eba531ee8",
+            "name": "updateCategory",
+            "url": "/category/update/65d9024b280de3c5ff1c19c0",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-02-23T20:47:55.626Z",
+            "modified": "2024-02-23T21:44:42.007Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Estadistica"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5c671ba1-a414-4de6-bc5f-4a38a15c8757",
+            "colId": "3445b6b8-d5e3-491e-ac18-add223192809",
+            "containerId": "06ef58ec-a6ea-4b65-9fb7-eb0eba531ee8",
+            "name": "deleteCategoria",
+            "url": "/category/delete/65d9024b280de3c5ff1c19c0",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-02-23T21:45:30.780Z",
+            "modified": "2024-02-23T21:48:53.648Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ5MTBkODg1NGZlYTE2OGE5MzQ0MWUiLCJ1c2VybmFtZSI6InBlcGVwZSIsIm5hbWUiOiJwZXBlIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzA4NzI0NDcwLCJleHAiOjE3MDg3MjgwNzB9.44cdnhCaURuQWWIh0eTbeWu8X0409epVhVWTlsMr0n8"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2880"
+        }
+    }
+}
